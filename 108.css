@@ -82,8 +82,8 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: circlemove 2s infinite linear;
-          animation: circlemove 2s infinite linear;
+  -webkit-animation: circlemove 2.5s infinite linear;
+          animation: circlemove 2.5s infinite linear;
 }
 
 .logo-img img {
@@ -95,28 +95,29 @@ body {
 
 @-webkit-keyframes circlemove {
   0%, 100% {
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -45%);
+            transform: translate(-50%, -45%);
   }
   50% {
-    -webkit-transform: translate(-50%, -55%);
-            transform: translate(-50%, -55%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
 @keyframes circlemove {
   0%, 100% {
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -45%);
+            transform: translate(-50%, -45%);
   }
   50% {
-    -webkit-transform: translate(-50%, -55%);
-            transform: translate(-50%, -55%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
 .title {
   position: absolute;
+  width: 100%;
   top: 70%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -128,10 +129,12 @@ body {
 }
 
 .next {
-  padding: 10px 30px;
+  padding: 12px 44px;
   font-family: "Josefin Sans";
-  color: white;
+  font-size: 16px;
+  font-weight: 500;
   background-color: #ff4040;
+  color: white;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -174,7 +177,7 @@ footer a {
 }
 
 .bow-wrap .bowing-card {
-  width: 400px;
+  width: 350px;
   height: 500px;
   background-color: white;
   margin: 0 auto;
@@ -193,13 +196,13 @@ footer a {
   font-family: "Josefin Sans";
   font-size: 100px;
   color: #8d98c7;
-  width: 400px;
+  width: 350px;
   height: 150px;
 }
 
 .bow-wrap .bowing-card h4 {
   padding: 50px 50px 50px;
-  width: 400px;
+  width: 350px;
   height: 250px;
   font-family: "Noto Serif KR";
   font-size: 20px;

@@ -86,21 +86,21 @@ body{
     width: 100%;
     height: 100%;
   }
-  animation:circlemove 2s infinite linear;
+  animation:circlemove 2.5s infinite linear;
 }
 
 @keyframes circlemove{
   0%,100%{
-      transform:translate(-50%,-50%);
+      transform:translate(-50%,-45%);
   }
   50%{
-      transform:translate(-50%,-55%);
-
+      transform:translate(-50%,-50%);
   }
 }
 
 .title{
   position: absolute;
+  width: 100%;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -111,10 +111,12 @@ body{
 }
 
 .next {
-  padding: 10px 30px;
+  padding: 12px 44px;
   font-family: $logo-font;
-  color: white;
+  font-size: 16px;
+  font-weight: 500;
   background-color: $color-red;
+  color: white;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -152,7 +154,7 @@ footer{
   cursor: pointer;
   transition:all .5s ease-in-out;
   .bowing-card{
-    width: 400px;
+    width: 350px;
     height: 500px;
     background-color: white;
     margin: 0 auto;
@@ -164,12 +166,12 @@ footer{
       font-family: $logo-font;
       font-size:100px;
       color: $color-purple;
-      width: 400px;
+      width: 350px;
       height: 150px;
     }
     h4{
       padding: 50px 50px 50px;
-      width: 400px;
+      width: 350px;
       height: 250px;
       font-family: $serif-font;
       // font-weight: 600;
