@@ -82,8 +82,7 @@ body {
 }
 
 .logo-img {
-  max-width: 100%;
-  min-width: 100px;
+  max-width: 500px;
   height: 60%;
   margin: 0 auto;
 }
@@ -91,7 +90,7 @@ body {
 .logo-img img {
   -o-object-fit: cover;
      object-fit: cover;
-  max-width: 100%;
+  width: 100%;
   -webkit-animation: circlemove 2.5s infinite linear;
           animation: circlemove 2.5s infinite linear;
 }
@@ -211,7 +210,7 @@ footer a {
 
 .bow-wrap .bowing-card .back {
   display: inline-block;
-  text-align: right;
+  text-align: left;
   padding: 30px;
   z-index: 9999;
   visibility: hidden;

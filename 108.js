@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  $(".bow-wrap").hide();
+
   // Need Back button
   function isBackButton(int) {
     if (109 > int && int > 1) {
