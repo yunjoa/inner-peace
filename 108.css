@@ -61,6 +61,13 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .logo {
@@ -75,53 +82,44 @@ body {
 }
 
 .logo-img {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-animation: circlemove 2.5s infinite linear;
-          animation: circlemove 2.5s infinite linear;
+  max-width: 100%;
+  min-width: 100px;
+  height: 60%;
+  margin: 0 auto;
 }
 
 .logo-img img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  -webkit-animation: circlemove 2.5s infinite linear;
+          animation: circlemove 2.5s infinite linear;
 }
 
 @-webkit-keyframes circlemove {
   0%, 100% {
-    -webkit-transform: translate(-50%, -45%);
-            transform: translate(-50%, -45%);
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%);
   }
   50% {
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
 @keyframes circlemove {
   0%, 100% {
-    -webkit-transform: translate(-50%, -45%);
-            transform: translate(-50%, -45%);
+    -webkit-transform: translateY(-5%);
+            transform: translateY(-5%);
   }
   50% {
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
 .title {
-  position: absolute;
   width: 100%;
-  top: 70%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   text-align: center;
   font-family: "Noto Sans KR";
   font-weight: 900;
@@ -177,11 +175,11 @@ footer a {
 }
 
 .bow-wrap .bowing-card {
-  width: 350px;
+  width: 420px;
   height: 500px;
   background-color: white;
   margin: 0 auto;
-  margin-top: 70px;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,13 +194,13 @@ footer a {
   font-family: "Josefin Sans";
   font-size: 100px;
   color: #8d98c7;
-  width: 350px;
+  width: 420px;
   height: 150px;
 }
 
 .bow-wrap .bowing-card h4 {
   padding: 50px 50px 50px;
-  width: 350px;
+  width: 420px;
   height: 250px;
   font-family: "Noto Serif KR";
   font-size: 20px;
